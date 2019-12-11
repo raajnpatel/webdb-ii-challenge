@@ -4,8 +4,7 @@ exports.up = function(knex) {
         knex.schema.createTable('cars', tbl => {
             tbl.increments();
 
-            tbl.integer('VIN')
-                .notNullable();
+            tbl.string('VIN');
 
             tbl.string('make')
                 .notNullable();
@@ -15,6 +14,12 @@ exports.up = function(knex) {
 
             tbl.integer('mileage')
                 .notNullable();
+
+            tbl.string('transmission')
+                .notNullable();
+
+            tbl.string('status')
+                .nullable();
         })
     );
 };

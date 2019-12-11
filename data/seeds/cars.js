@@ -6,10 +6,12 @@ exports.seed = function(knex) {
             // Inserts seed entries
             return knex('cars').insert([
                 {
-                    "VIN": 86516546543,
-                    "Make": "BMW",
-                    "Model": "M5",
-                    "Mileage": 24000
+                    "VIN": "86516546543",
+                    "make": "BMW",
+                    "model": "M5",
+                    "mileage": 24000,
+                    "transmission": "Manual",
+                    "status": "Brand New"
                 }
             ]);
         });
