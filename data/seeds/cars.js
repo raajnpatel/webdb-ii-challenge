@@ -12,7 +12,31 @@ exports.seed = function(knex) {
                     "mileage": 24000,
                     "transmission": "Manual",
                     "status": "Brand New"
-                }
+                },
+                {
+                    "VIN": "654sdf654sdf",
+                    "make": "Audi",
+                    "model": "S7",
+                    "mileage": 8000,
+                    "transmission": "Auto",
+                    "status": "Used"
+                },
+                {
+                    "VIN": "874wer654hfd",
+                    "make": "Tesla",
+                    "model": "CyberTruck",
+                    "mileage": 24,
+                    "transmission": "Auto",
+                    "status": "Clean"
+                },
+                {
+                    "VIN": "erg54srg65414",
+                    "make": "Alfa Romeo",
+                    "model": "4C",
+                    "mileage": 10,
+                    "transmission": "Manual",
+                    "status": "Brand New"
+                },
             ]);
         });
 };
